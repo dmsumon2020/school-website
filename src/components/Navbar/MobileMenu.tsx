@@ -4,7 +4,14 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetHeader, // Import SheetHeader
+  SheetTitle, // Import SheetTitle
+  SheetDescription, // Import SheetDescription
+} from "@/components/ui/sheet";
 import {
   Accordion,
   AccordionContent,
@@ -25,6 +32,15 @@ export default function MobileMenu() {
         </SheetTrigger>
 
         <SheetContent side="left" className="w-64 p-4">
+          {/* Add SheetHeader with SheetTitle and SheetDescription */}
+          <SheetHeader>
+            <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>{" "}
+            {/* Hidden title for accessibility */}
+            <SheetDescription className="sr-only">
+              Navigation menu for mobile devices.
+            </SheetDescription>
+          </SheetHeader>
+
           <nav className="space-y-2 mt-6 text-sm font-medium">
             {/* Home */}
             <Link href="/" onClick={() => setOpen(false)} className="block">
