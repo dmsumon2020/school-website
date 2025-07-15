@@ -69,8 +69,9 @@ export default function SingleFact({
 
     // Get the element by its ID to observe
     // Using a more robust ID generation to avoid conflicts
+    // Ensure 'text' is a string before calling replace()
     const factElement = document.getElementById(
-      `fact-${facts}-${text.replace(/\s/g, "-")}`
+      `fact-${facts}-${(text || "").replace(/\s/g, "-")}`
     );
     if (factElement) {
       observer.observe(factElement);
@@ -90,7 +91,8 @@ export default function SingleFact({
   return (
     <div
       // Unique ID for Intersection Observer to target this specific element
-      id={`fact-${facts}-${text.replace(/\s/g, "-")}`}
+      // Ensure 'text' is a string before calling replace()
+      id={`fact-${facts}-${(text || "").replace(/\s/g, "-")}`}
       className={`flex flex-col justify-center items-center py-10 ${
         !noBorderRight ? "border-r border-solid border-gray-400" : ""
       }`}
