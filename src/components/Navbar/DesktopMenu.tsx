@@ -14,20 +14,25 @@ export function DesktopMenu() {
       <NavigationMenuList className="space-x-4 text-sm font-medium">
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link href="/" className="hover:text-primary">
+            <Link
+              href="/"
+              className="hover:text-primary text-base md:text-lg uppercase font-bold"
+            >
               Home
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>About</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-base md:text-lg uppercase font-bold">
+            About
+          </NavigationMenuTrigger>
           <NavigationMenuContent className="p-4 bg-white rounded-md shadow-md animate-scale-in">
             <ul className="grid gap-2 w-48">
               <li>
                 <Link
                   href="/about/history"
-                  className="block px-2 py-1 hover:bg-gray-100 rounded"
+                  className="block px-2 py-1 hover:bg-gray-100 rounded text-base md:text-lg uppercase font-bold"
                 >
                   History
                 </Link>
@@ -35,7 +40,7 @@ export function DesktopMenu() {
               <li>
                 <Link
                   href="/about/mission"
-                  className="block px-2 py-1 hover:bg-gray-100 rounded"
+                  className="block px-2 py-1 hover:bg-gray-100 rounded text-base md:text-lg uppercase font-bold"
                 >
                   Mission & Vision
                 </Link>
@@ -46,7 +51,10 @@ export function DesktopMenu() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link href="/admission" className="hover:text-primary">
+            <Link
+              href="/admission"
+              className="hover:text-primary text-base md:text-lg uppercase font-bold"
+            >
               Admission
             </Link>
           </NavigationMenuLink>
@@ -54,7 +62,10 @@ export function DesktopMenu() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link href="/events" className="hover:text-primary">
+            <Link
+              href="/events"
+              className="hover:text-primary text-base md:text-lg uppercase font-bold"
+            >
               Events
             </Link>
           </NavigationMenuLink>
@@ -62,7 +73,10 @@ export function DesktopMenu() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link href="/contact" className="hover:text-primary">
+            <Link
+              href="/contact"
+              className="hover:text-primary text-base md:text-lg uppercase font-bold"
+            >
               Contact
             </Link>
           </NavigationMenuLink>

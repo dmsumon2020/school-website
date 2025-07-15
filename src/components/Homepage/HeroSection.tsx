@@ -13,9 +13,8 @@ const HeroSection = () => {
   const slider = "/images/slider/slider.jpg";
 
   return (
-    <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center text-white">
+    <section className="relative h-[90vh] min-h-[400px] w-full flex items-center justify-center text-white">
       {/* Background Image */}
-      {/* Replace the placeholder URL with your actual school image URL */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
@@ -36,7 +35,7 @@ const HeroSection = () => {
         <h3 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight animate-fade-in-down">
           জ্ঞানই শক্তি, শিক্ষাই আলো
         </h3>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-in-up">
+        <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8 animate-fade-in-up">
           আমাদের প্রতিষ্ঠানে আপনার সন্তানকে একটি উজ্জ্বল ভবিষ্যতের জন্য প্রস্তুত
           করুন। আমরা মানসম্মত শিক্ষা প্রদানে প্রতিশ্রুতিবদ্ধ।
         </p>
@@ -44,7 +43,7 @@ const HeroSection = () => {
         {/* Call-to-Action Button */}
         <Button
           size="lg"
-          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-transform transform hover:scale-105"
+          className="hover:bg-theme-ascent bg-white text-black hover:text-white cursor-pointer font-bold py-7 px-6 rounded-full transition-transform transform hover:scale-105 text-xl"
         >
           ভর্তি তথ্য দেখুন
         </Button>
