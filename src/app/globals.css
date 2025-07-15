@@ -126,3 +126,12 @@
 body {
   font-family: var(--font-open-sans);
 }
+
+.text-clip {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+.single-fact:hover .text-clip {
+  -webkit-text-fill-color: var(--color-theme-ascent);
+  -webkit-text-stroke: 1px;
+}
