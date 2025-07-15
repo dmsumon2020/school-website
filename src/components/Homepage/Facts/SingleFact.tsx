@@ -1,4 +1,4 @@
-"use client"; // Added: This directive marks the component as a Client Component
+"use client"; // This directive marks the component as a Client Component
 
 import React, { useState, useEffect } from "react"; // Import useState and useEffect
 
@@ -91,11 +91,11 @@ export default function SingleFact({
     <div
       // Unique ID for Intersection Observer to target this specific element
       id={`fact-${facts}-${text.replace(/\s/g, "-")}`}
-      className={`flex flex-col justify-center items-center py-10 single-fact cursor-pointer transition-all duration-250 ease-in-out ${
+      className={`flex flex-col justify-center items-center py-10 ${
         !noBorderRight ? "border-r border-solid border-gray-400" : ""
       }`}
     >
-      <h2 className="text-9xl text-theme-ascent font-bold tracking-tighter text-clip">
+      <h2 className="text-8xl text-theme-ascent font-bold tracking-tighter text-clip">
         {currentNumber} {/* Display the animated number */}
       </h2>
       <p className="mt-5 text-2xl">{text}</p>
