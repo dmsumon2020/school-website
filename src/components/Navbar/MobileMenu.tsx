@@ -1,10 +1,16 @@
 "use client";
 
+import { useState } from "react";
+import Link from "next/link";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -19,56 +25,56 @@ export default function MobileMenu() {
         </SheetTrigger>
 
         <SheetContent side="left" className="w-64 p-4">
-          <nav className="space-y-2 mt-6">
-            <Link
-              href="/"
-              onClick={() => setOpen(false)}
-              className="block font-medium"
-            >
+          <nav className="space-y-2 mt-6 text-sm font-medium">
+            {/* Home */}
+            <Link href="/" onClick={() => setOpen(false)} className="block">
               Home
             </Link>
 
-            {/* Dropdown (Manual inside Sheet) */}
-            <details className="group">
-              <summary className="cursor-pointer font-medium hover:text-primary">
-                About
-              </summary>
-              <div className="pl-4 mt-2 space-y-1 text-sm">
-                <Link
-                  href="/about/history"
-                  onClick={() => setOpen(false)}
-                  className="block"
-                >
-                  History
-                </Link>
-                <Link
-                  href="/about/mission"
-                  onClick={() => setOpen(false)}
-                  className="block"
-                >
-                  Mission & Vision
-                </Link>
-              </div>
-            </details>
+            {/* ✅ About Dropdown with ShadCN Accordion */}
+            <Accordion type="single" collapsible>
+              <AccordionItem value="about">
+                <AccordionTrigger className="px-0 hover:no-underline py-1">
+                  About
+                </AccordionTrigger>
+                <AccordionContent className="pl-4 space-y-1">
+                  <Link
+                    href="/about/history"
+                    onClick={() => setOpen(false)}
+                    className="block"
+                  >
+                    History
+                  </Link>
+                  <Link
+                    href="/about/mission"
+                    onClick={() => setOpen(false)}
+                    className="block"
+                  >
+                    Mission & Vision
+                  </Link>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
 
+            {/* Other static links */}
             <Link
               href="/admission"
               onClick={() => setOpen(false)}
-              className="block font-medium"
+              className="block"
             >
               Admission
             </Link>
             <Link
               href="/events"
               onClick={() => setOpen(false)}
-              className="block font-medium"
+              className="block"
             >
               Events
             </Link>
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="block font-medium"
+              className="block"
             >
               Contact
             </Link>
