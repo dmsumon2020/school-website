@@ -9,7 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"; // Assuming ShadCN Card is available
-import { Button } from "@/components/ui/button"; // Assuming ShadCN Button is available
 import HeadmasterMessageSection from "@/components/Homepage/HeadmasterMessageSection";
 import NewsTicker from "@/components/Homepage/NewsTicker";
 

@@ -6,7 +6,7 @@ type RichTextBlock = {
   }[];
 };
 
-export type HeadmasterMessage = {
+export type HeadmasterMessageType = {
   title: string;
   message: RichTextBlock[];
   headmasterName: string;

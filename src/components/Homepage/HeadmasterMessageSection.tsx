@@ -1,10 +1,11 @@
-import { getHeadmasterMessage } from "@/lib/getHeadmasterMessage";
-import { HeadmasterMessage } from "@/types/HeadmasterMessage";
+import { getHeadmasterMessage } from "@/lib/strapi/getHeadmasterMessage";
+import { HeadmasterMessageType } from "@/types/HeadmasterMessageType";
+
 import Image from "next/image";
 
 export default async function HeadmasterMessageSection() {
   const data = await getHeadmasterMessage();
-  const item: HeadmasterMessage = data[0];
+  const item: HeadmasterMessageType = data[0];
 
   const { title, message, headmasterName, image } = item;
 
