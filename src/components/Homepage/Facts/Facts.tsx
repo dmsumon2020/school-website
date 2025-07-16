@@ -1,5 +1,5 @@
 import React from "react";
-import SingleFact from "./SingleFact"; // Assuming SingleFact is in the same directory
+import SingleFact from "./SingleFact";
 
 export default function Facts() {
   return (

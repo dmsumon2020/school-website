@@ -15,7 +15,7 @@ import React, { useState, useEffect } from "react"; // Import useState and useEf
 export default function SingleFact({
   facts,
   text,
-  noBorderRight, // New prop to control the right border
+  noBorderRight,
 }: {
   facts: string;
   text: string;
