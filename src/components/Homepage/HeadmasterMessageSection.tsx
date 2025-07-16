@@ -23,14 +23,11 @@ const HeadmasterMessageSection: React.FC = () => {
           />
         </div>
         {/* Left Side: Headmaster's Message (now on the left for md screens and up) */}
-        <div
-          className="flex-1 p-8 md:px-28 md:py-40 text-white text-center md:text-left"
-          style={{ backgroundColor: "#140f50" }}
-        >
+        <div className="flex-1 p-8 md:px-28 md:py-40 text-white text-center md:text-left bg-theme-ascent">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             প্রধান শিক্ষকের বাণী
           </h2>
-          <p className="text-xl md:text-2xl leading-relaxed italic">
+          <p className="text-xl md:text-lg leading-relaxed italic">
             &quot;শিক্ষা জাতির মেরুদণ্ড। একটি উন্নত ও সমৃদ্ধ জাতি গঠনে শিক্ষার
             কোনো বিকল্প নেই। আমাদের প্রতিষ্ঠান শিক্ষার্থীদের শুধুমাত্র পুঁথিগত
             বিদ্যায় শিক্ষিত করে না, বরং তাদের সুনাগরিক হিসেবে গড়ে তোলার জন্য

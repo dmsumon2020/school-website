@@ -13,7 +13,7 @@ const HeroSection = () => {
   const slider = "/images/slider/slider.jpg";
 
   return (
-    <section className="relative h-[90vh] min-h-[400px] w-full flex items-center justify-center text-white">
+    <section className="relative h-[80vh] min-h-[400px] w-full flex items-center justify-center text-white">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"

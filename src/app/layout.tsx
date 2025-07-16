@@ -4,6 +4,7 @@ import "./globals.css";
 import Copyright from "@/components/Copyright";
 import Navbar from "@/components/Navbar/Navbar";
 import NavbarTop from "@/components/Navbar/NavbarTop";
+import NewsTicker from "@/components/Homepage/NewsTicker";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
