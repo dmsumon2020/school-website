@@ -10,7 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"; // Assuming ShadCN Card is available
 import HeadmasterMessageSection from "@/components/Homepage/HeadmasterMessageSection";
-import NewsTicker from "@/components/Homepage/NewsTicker";
+import NewsTicker from "@/components/Homepage/NewsTicker3";
 
 // Define a simple type for News/Event items
 interface NewsEvent {

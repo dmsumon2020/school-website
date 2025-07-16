@@ -1,24 +1,13 @@
-// src/components/custom/NewsTicker.tsx
-"use client";
-
-import { NewsTickerProps, Speed } from "@/types/NewsTickerProps";
-import React from "react";
+import { getNewsTicker } from "@/lib/strapi/getNewsTicker";
+import { NewsTickerType, Speed } from "@/types/NewsTickerType";
+import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
-/**
- * NewsTicker Component
- * This component displays a list of news headlines in a continuously scrolling manner
- * using the react-fast-marquee library.
- *
- * @param {NewsTickerProps} props - The component props.
- * @param {string[]} props.newsItems - An array of news headlines to be displayed.
- * @param {'slow' | 'normal' | 'fast'} [props.speed='normal'] - The scrolling speed.
- */
-const NewsTicker: React.FC<NewsTickerProps> = ({
-  newsItems,
-  speed = "normal",
-}) => {
-  // Determine marquee speed based on the speed prop
+export default async function NewsTicker({ speed }: { speed: Speed }) {
+  const data: NewsTickerType[] = await getNewsTicker();
+
+  console.log(data);
+
   const getMarqueeSpeed = (currentSpeed: Speed) => {
     switch (currentSpeed) {
       case "slow":
@@ -38,16 +27,22 @@ const NewsTicker: React.FC<NewsTickerProps> = ({
         gradient={false} // Disable gradient effect
         pauseOnHover={true} // Pause scrolling on mouse hover
       >
-        {newsItems.map((item, index) => (
-          <span key={index} className="whitespace-nowrap mx-8 text-base">
-            {" "}
-            {/* Add margin and text size */}
-            {item}
-          </span>
-        ))}
+        {data.map((item, index) =>
+          item.url ? (
+            <Link
+              href={item.url}
+              key={index}
+              className="whitespace-nowrap mx-8 text-2xl"
+            >
+              {item.news}
+            </Link>
+          ) : (
+            <span key={index} className="whitespace-nowrap mx-8 text-2xl">
+              {item.news}
+            </span>
+          )
+        )}
       </Marquee>
     </div>
   );
-};
-
-export default NewsTicker;
+}
