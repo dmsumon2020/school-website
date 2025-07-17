@@ -3,6 +3,7 @@ import HeadmasterMessageSection from "@/components/Homepage/HeadmasterMessageSec
 import HeroSection from "@/components/Homepage/HeroSection";
 import LatestNotice from "@/components/Homepage/LatestNotice";
 import NewsTicker from "@/components/Homepage/NewsTicker";
+import ParalaxSection from "@/components/Homepage/ParalaxSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <NewsTicker speed={"slow"} />
       <HeadmasterMessageSection />
       <Facts />
+      <ParalaxSection />
       <LatestNotice />
     </>
   );

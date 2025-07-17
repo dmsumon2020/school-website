@@ -20,7 +20,7 @@ const HeroSection = async () => {
   const sliderImageUrl = image?.[0]?.url || "";
 
   return (
-    <section className="relative h-[80vh] min-h-[400px] w-full flex items-center justify-center text-white">
+    <section className="relative h-[85vh] min-h-[400px] w-full flex items-center justify-center text-white">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
@@ -39,7 +39,7 @@ const HeroSection = async () => {
         <h2 className="text-4xl md:text-6xl font-extrabold uppercase mb-4 tracking-tight animate-fade-in-down">
           {title}
         </h2>
-        <h3 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight animate-fade-in-down">
+        <h3 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight animate-fade-in-down my-8">
           {subtitle1}
         </h3>
         <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8 animate-fade-in-up">
