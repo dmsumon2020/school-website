@@ -1,7 +1,6 @@
 // src/components/custom/HeroSection.tsx
 
 import React from "react";
-import { Button } from "@/components/ui/button"; // ShadCN Button component import
 import { getHeroSection } from "@/lib/strapi/getHeroSection";
 import { HeroSectionType } from "@/types/HeroSectionType";
 import SchoolButton from "../SchoolButton";
@@ -48,7 +47,7 @@ const HeroSection = async () => {
 
         {/* Call-to-Action Button */}
         <div>
-          <SchoolButton text="ভর্তি তথ্য পেতে ক্লিক করুন" link="#" />
+          <SchoolButton text={buttonText} link="#" />
         </div>
       </div>
     </section>
