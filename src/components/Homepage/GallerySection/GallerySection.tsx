@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import ImageModalCard from "./ImageModalCard";
+import SchoolButton from "@/components/SchoolButton";
 
 const column1 = [
   {
@@ -28,33 +29,51 @@ const column2 = [
 ];
 
 export default function GallerySection() {
+  const arrowImage = "/images/arrow.svg";
+
   return (
     <section className="py-20">
       <div className="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <div>
-          <h2 className="text-4xl font-bold text-theme-ascent mb-4">
-            Our Programs
+          <h2 className="text-theme-ascent font-bold text-5xl mb-10">
+            সকল শ্রেণিতে ভর্তির জন্য যা যা প্রয়োজন
           </h2>
-          <p className="text-lg text-gray-700 mb-6">
-            Embark on a journey of knowledge, discovery, and growth at Unipix
-            University. Our admissions process is designed to identify bright,
-            motivated individuals who are eager to contribute to our dynamic
-            academic community.
-          </p>
-          <Button className="text-lg">Know more</Button>
+          <ol className="text-2xl text-gray-700 space-y-3 mb-6 list-decimal list-inside">
+            <li>শিক্ষার্থীর ২ কপি পাসপোর্ট সাইজ ছবি</li>
+            <li>জন্ম নিবন্ধ</li>
+            <li>পিতার NID কার্ডের ফটোকপি</li>
+            <li>মাতার NID কার্ডের ফটোকপি</li>
+            <li>পূর্ববর্তী শিক্ষাপ্রতিষ্ঠানের ছাড়পত্র/ TC (যদি থাকে)</li>
+            <li>৯ম শ্রেণিতে ভর্তির ক্ষেত্রে PSC সার্টিফিকেট প্রয়োজন </li>
+            <li>পূরণকৃত ভর্তি ফরম</li>
+          </ol>
+
+          <h2 className="text-theme-ascent font-bold text-3xl">
+            আরও বিস্তারিত জানতে ফোন দিন
+          </h2>
+          <div className="ml-[150px]">
+            <Image
+              src={arrowImage}
+              alt="Arrow"
+              width={136}
+              height={199}
+              className=""
+            />
+
+            <div className="rotate-[-50deg] ml-[60px] -mt-[10%] inline-block">
+              <SchoolButton text="01738-847798" link="#" />
+            </div>
+          </div>
         </div>
 
         {/* Right - 2 staggered image columns */}
         <div className="grid grid-cols-2 gap-4">
-          {/* Column 1 */}
           <div className="flex flex-col gap-4">
             {column1.map((img, idx) => (
               <ImageModalCard key={idx} img={img} />
             ))}
           </div>
-
-          {/* Column 2 with vertical offset */}
           <div className="flex flex-col gap-4 mt-16">
             {column2.map((img, idx) => (
               <ImageModalCard key={idx} img={img} />

@@ -6,7 +6,7 @@ export default function LatestNotice() {
     <section className="py-20">
       <div className="container mx-auto">
         <h2 className="text-theme-ascent font-bold text-5xl text-center mb-10">
-          Latest Notices and Updates
+          Latest Notices and Updates/ গুরুত্বপূর্ণ ঘোষণা
         </h2>
         <div className="relative group">
           <a
