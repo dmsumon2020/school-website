@@ -10,7 +10,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"; // Assuming ShadCN Card is available
 import HeadmasterMessageSection from "@/components/Homepage/HeadmasterMessageSection";
-import NewsTicker from "@/components/Homepage/NewsTicker3";
 
 // Define a simple type for News/Event items
 interface NewsEvent {
@@ -152,7 +151,7 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection />
       {/* News Ticker Section */}
-      <NewsTicker newsItems={latestNews} speed="normal" />{" "}
+
       {/* এখানে নিউজ টিকার ব্যবহার করা হয়েছে */}
       {/* Headmaster's Message Section */}
       <HeadmasterMessageSection />

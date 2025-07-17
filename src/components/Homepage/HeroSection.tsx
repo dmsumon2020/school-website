@@ -4,6 +4,7 @@ import React from "react";
 import { Button } from "@/components/ui/button"; // ShadCN Button component import
 import { getHeroSection } from "@/lib/strapi/getHeroSection";
 import { HeroSectionType } from "@/types/HeroSectionType";
+import SchoolButton from "../SchoolButton";
 
 /**
  * HeroSection Component
@@ -46,12 +47,9 @@ const HeroSection = async () => {
         </p>
 
         {/* Call-to-Action Button */}
-        <Button
-          size="lg"
-          className="hover:bg-theme-ascent bg-white text-black hover:text-white cursor-pointer font-bold py-7 px-6 rounded-full transition-transform transform hover:scale-105 text-xl"
-        >
-          {buttonText}
-        </Button>
+        <div>
+          <SchoolButton text="ভর্তি তথ্য পেতে ক্লিক করুন" link="#" />
+        </div>
       </div>
     </section>
   );

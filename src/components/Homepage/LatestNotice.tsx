@@ -1,3 +1,4 @@
+import SchoolButton from "../SchoolButton";
 import { Button } from "../ui/button";
 
 export default function LatestNotice() {
@@ -119,14 +120,8 @@ export default function LatestNotice() {
         </div>
 
         {/* View All Notices Button (ShadCN style) */}
-        <div className="text-center mt-10">
-          <Button
-            asChild
-            size={"lg"}
-            className="px-6 py-7 font-bold text-xl hover:scale-105 hover:bg-theme-ascent transition-all duration-100 ease-in-out"
-          >
-            <a href="/notices">সকল নোটিশ দেখুন</a>
-          </Button>
+        <div className="mt-10 flex justify-center">
+          <SchoolButton text="সকল নোটিশ দেখুন" link="#" />
         </div>
       </div>
     </section>
