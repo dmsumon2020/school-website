@@ -3,7 +3,7 @@ import WhyChooseUsCard from "./WhyChooseUsCard";
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="py-32 bg-[#ffe8ec]">
+    <section className="py-32 bg-[#f6f6f6]">
       <div className="container mx-auto px-4">
         <h2 className="text-theme-ascent font-bold text-5xl mb-10">
           কেন আশরাফ আলী স্কুল <br /> আপনার সন্তানের জন্য সেরা নির্বাচন
