@@ -6,8 +6,6 @@ import Marquee from "react-fast-marquee";
 export default async function NewsTicker({ speed }: { speed: Speed }) {
   const data: NewsTickerType[] = await getNewsTicker();
 
-  console.log(data);
-
   const getMarqueeSpeed = (currentSpeed: Speed) => {
     switch (currentSpeed) {
       case "slow":

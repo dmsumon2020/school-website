@@ -1,4 +1,5 @@
 import Facts from "@/components/Homepage/Facts/Facts";
+import GallerySection from "@/components/Homepage/GallerySection/GallerySection";
 import HeadmasterMessageSection from "@/components/Homepage/HeadmasterMessageSection";
 import HeroSection from "@/components/Homepage/HeroSection";
 import LatestNotice from "@/components/Homepage/LatestNotice";
@@ -14,6 +15,7 @@ export default function Home() {
       <Facts />
       <ParalaxSection />
       <LatestNotice />
+      <GallerySection />
     </>
   );
 }
