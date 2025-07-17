@@ -4,7 +4,7 @@ import MobileMenu from "./MobileMenu";
 export default function Navbar() {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      <nav className="container mx-auto flex justify-between items-center px-4 py-7">
+      <nav className="container mx-auto flex justify-between items-center px-4 py-6">
         <div className="text-xl font-bold">IAAHS</div>
 
         {/* Desktop Nav */}
