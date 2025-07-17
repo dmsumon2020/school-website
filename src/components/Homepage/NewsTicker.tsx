@@ -21,7 +21,7 @@ export default async function NewsTicker({ speed }: { speed: Speed }) {
   };
 
   return (
-    <div className="bg-blue-800 text-white py-2 w-full shadow-md">
+    <div className="bg-[#96102b] text-white py-2 w-full shadow-md">
       <Marquee
         speed={getMarqueeSpeed(speed)} // Pass the 'speed' prop to the function
         gradient={false} // Disable gradient effect

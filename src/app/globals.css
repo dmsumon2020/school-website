@@ -42,8 +42,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  /* --color-theme-ascent: #155dfc; */
-  --color-theme-ascent: #193cb8;
+  --color-theme-ascent: #890c25;
 }
 
 :root {
