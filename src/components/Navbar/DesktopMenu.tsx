@@ -52,10 +52,10 @@ export function DesktopMenu() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
-              href="/admission"
+              href="/teachers"
               className="hover:text-primary text-base md:text-lg uppercase font-bold"
             >
-              Admission
+              Teachers Information
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
