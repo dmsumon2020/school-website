@@ -22,7 +22,7 @@ export default async function ChairmanMessageSection() {
         <div className="flex-1 w-full md:w-auto overflow-hidden relative h-72 md:h-auto">
           {imageUrl && (
             <Image
-              src={imageUrl}
+              src="/images/headmaster.jpg"
               alt="headmaster"
               fill
               className="object-cover"
@@ -31,13 +31,24 @@ export default async function ChairmanMessageSection() {
         </div>
 
         <div className="flex-1 p-8 md:px-28 md:py-40 text-white text-center md:text-left bg-theme-ascent">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">{title}</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            A message from our honorable chairman
+          </h2>
 
           <p className="text-xl md:text-lg leading-relaxed italic whitespace-pre-line">
-            {plainMessage}
+            As the Principal of Begum Badrunnessa Govt. Girls College, I am
+            proud of our dedication and pursuit of excellence. This institution
+            nurtures bright minds, shapes future leaders, and fosters
+            innovation. Beyond academics, our students excel in extracurricular
+            activities, embodying the true spirit of Begum Badrunnessa Govt.
+            Girls College. I encourage every student to embrace challenges,
+            strive for knowledge, and uphold the values that define our esteemed
+            institution
           </p>
 
-          <p className="text-xl font-semibold mt-6">{headmasterName}</p>
+          <p className="text-xl font-semibold mt-6">
+            - Professor Tamanna Begum
+          </p>
         </div>
       </div>
     </section>
