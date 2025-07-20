@@ -31,6 +31,15 @@ export function DesktopMenu() {
             <ul className="grid gap-2 w-48">
               <li>
                 <Link
+                  href="/founder"
+                  className="block px-2 py-1 hover:bg-gray-100 rounded text-base md:text-lg uppercase font-bold"
+                >
+                  Founder
+                </Link>
+              </li>
+
+              <li>
+                <Link
                   href="/about/history"
                   className="block px-2 py-1 hover:bg-gray-100 rounded text-base md:text-lg uppercase font-bold"
                 >
