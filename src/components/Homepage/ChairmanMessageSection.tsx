@@ -36,19 +36,17 @@ export default async function ChairmanMessageSection() {
           </h2>
 
           <p className="text-xl md:text-lg leading-relaxed italic whitespace-pre-line">
-            As the Principal of Begum Badrunnessa Govt. Girls College, I am
-            proud of our dedication and pursuit of excellence. This institution
-            nurtures bright minds, shapes future leaders, and fosters
-            innovation. Beyond academics, our students excel in extracurricular
-            activities, embodying the true spirit of Begum Badrunnessa Govt.
-            Girls College. I encourage every student to embrace challenges,
-            strive for knowledge, and uphold the values that define our esteemed
+            As the honorable president of Ashraf Ali High School, I am proud of
+            our dedication and pursuit of excellence. This institution nurtures
+            bright minds, shapes future leaders, and fosters innovation. Beyond
+            academics, our students excel in extracurricular activities,
+            embodying the true spirit of Begum Badrunnessa Govt. Girls College.
+            I encourage every student to embrace challenges, strive for
+            knowledge, and uphold the values that define our esteemed
             institution
           </p>
 
-          <p className="text-xl font-semibold mt-6">
-            - Professor Tamanna Begum
-          </p>
+          <p className="text-xl font-semibold mt-6">- Sumaiya Ashraf</p>
         </div>
       </div>
     </section>

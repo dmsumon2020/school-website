@@ -4,8 +4,8 @@ const teachers = [
   {
     id: 1,
     profilePhoto: "/images/teachers/teacher1.jpg",
-    name: "Anisur Rahman",
-    designation: "Senior Teacher",
+    name: "MD. ALAMGIR	",
+    designation: "Headmaster",
     subject: "Mathematics",
     educationalQualification: "M.Sc. in Mathematics",
     joiningDate: "2010-01-15",
@@ -19,8 +19,8 @@ const teachers = [
   {
     id: 2,
     profilePhoto: "/images/teachers/teacher2.jpg",
-    name: "Fatema Akter",
-    designation: "Assistant Teacher",
+    name: "MD ENAYET HOSSAIN KHAN	",
+    designation: "Assistant Headmaster",
     subject: "English",
     educationalQualification: "M.A. in English",
     joiningDate: "2015-08-10",
@@ -34,8 +34,8 @@ const teachers = [
   {
     id: 3,
     profilePhoto: "/images/teachers/teacher3.jpg",
-    name: "Md. Zakir Hossain",
-    designation: "Assistant Teacher",
+    name: "MOHAMMED NASIR UDDIN",
+    designation: "Assistant Headmaster",
     subject: "Bangla",
     educationalQualification: "M.A. in Bangla",
     joiningDate: "2012-07-01",
@@ -49,7 +49,7 @@ const teachers = [
   {
     id: 4,
     profilePhoto: "/images/teachers/teacher4.jpg",
-    name: "Shamima Sultana",
+    name: "FAZILATUN NESA MUSAMMAT SADEKA KHATUN",
     designation: "Senior Teacher",
     subject: "Science",
     educationalQualification: "M.Sc. in Physics",
@@ -64,7 +64,7 @@ const teachers = [
   {
     id: 5,
     profilePhoto: "/images/teachers/teacher5.jpg",
-    name: "Tariqul Islam",
+    name: "SHAHNAJ PARVIN",
     designation: "Assistant Teacher",
     subject: "ICT",
     educationalQualification: "B.Sc. in Computer Science",
@@ -79,7 +79,7 @@ const teachers = [
   {
     id: 6,
     profilePhoto: "/images/teachers/teacher6.jpg",
-    name: "Nasrin Jahan",
+    name: "JHARNA MISTRY",
     designation: "Assistant Teacher",
     subject: "Religion",
     educationalQualification: "Kamil in Islamic Studies",
@@ -94,7 +94,7 @@ const teachers = [
   {
     id: 7,
     profilePhoto: "/images/teachers/teacher7.jpg",
-    name: "Mahmudul Hasan",
+    name: "MD. ABUL HASHEM",
     designation: "Senior Teacher",
     subject: "Social Science",
     educationalQualification: "M.S.S. in Political Science",
@@ -109,7 +109,7 @@ const teachers = [
   {
     id: 8,
     profilePhoto: "/images/teachers/teacher8.jpg",
-    name: "Farhana Yasmin",
+    name: "MD. ANOWER HOSSAIN",
     designation: "Assistant Teacher",
     subject: "Biology",
     educationalQualification: "M.Sc. in Zoology",
@@ -124,7 +124,7 @@ const teachers = [
   {
     id: 9,
     profilePhoto: "/images/teachers/teacher9.jpg",
-    name: "Shahidul Alam",
+    name: "LATIFA YEASMIN",
     designation: "Assistant Teacher",
     subject: "Chemistry",
     educationalQualification: "M.Sc. in Chemistry",
@@ -139,7 +139,7 @@ const teachers = [
   {
     id: 10,
     profilePhoto: "/images/teachers/teacher10.jpg",
-    name: "Rokeya Begum",
+    name: "SHAHANAZ BEGUM",
     designation: "Senior Teacher",
     subject: "Economics",
     educationalQualification: "M.S.S. in Economics",
